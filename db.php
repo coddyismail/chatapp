@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
+$host = "mysql.railway.internal";
 $user = "root";
-$pass = "";
-$db_name = "chat_app";
+$pass = "rsjvuqetFKJIzsYLEmlEYusQcfgYysQx";
+$db_name = "railway";
 
 $conn = new mysqli($host, $user, $pass, $db_name);
 if($conn->connect_error){
