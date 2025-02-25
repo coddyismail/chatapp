@@ -1,0 +1,140 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; 
+    /* Soft blue gradient */
+    padding: 20px;
+}
+
+/* Register Container */
+.register-container {
+    width: 70vw;
+    max-width: 400px;
+    background: linear-gradient(to right, #007BFF, #0056b3); 
+    border-radius: 20px;
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); */
+    /* backdrop-filter: blur(12px); */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* Register Title Styling */
+h2{
+    position: absolute;
+    top: 50px;
+}
+
+
+/* Heading */
+h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(8px);
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #191919;
+    color: white;
+    font-weight: bold;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+/* Login Link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #ffcc00; /* Gold color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.login-link a:hover {
+    color: #ffd700; /* Slightly brighter on hover */
+}
+
+
+button:active {
+    transform: translateY(5px);
+    /* background-color: #4a00ad;  */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .register-container {
+        width: 90vw;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        width: 95vw;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
