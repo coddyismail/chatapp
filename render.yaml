@@ -1,0 +1,10 @@
+services:
+  - name: chatapp
+    type: web
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        value: "your-mysql-database-url"
+    healthCheckPath: "/"
