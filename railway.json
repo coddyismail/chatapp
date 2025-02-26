@@ -1,2 +1,11 @@
-
-  
+{
+  "build": {
+    "env": {
+      "MYSQLHOST": "mysql.railway.internal",
+      "MYSQLUSER": "root",
+      "MYSQLPASSWORD": "rCOjSGZQlSWiQjReDIkVeRPFSAZdONgx",
+      "MYSQLDATABASE": "railway",
+      "MYSQLPORT": "3306"
+    }
+  }
+}
