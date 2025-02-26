@@ -1,14 +1,15 @@
 <?php
-$host = "mysql.railway.internal";
-$user = "root";
-$pass = "rsjvuqetFKJIzsYLEmlEYusQcfgYysQx";
-$db_name = "railway";
+$host = "mysql.railway.internal"; // MySQL Host
+$user = "root"; // MySQL User
+$password = "rCOjSGZQlSWiQjReDIkVeRPFSAZdONgx"; // MySQL Password
+$database = "railway"; // Database Name
+$port = 3306; // MySQL Port
 
-$conn = new mysqli($host, $user, $pass, $db_name);
-if($conn->connect_error){
-    die("Connection failed: . $conn->connect_error");
-}
-else{
-    // echo "Connection Done";
+// Create a connection
+$conn = new mysqli($host, $user, $password, $database, $port);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 ?>
